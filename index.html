@@ -14,26 +14,30 @@
     />
     <script src="https://cdn.tailwindcss.com"></script>
     <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              backgroundImage: {
-              'slider1' : "url('./images/banner1.png')",
-              'slider2' : "url('./images/banner2.png')",
-              'slider3' : "url('./images/banner3.png')",
-              'slider4' : "url('./images/banner4.png')",
+      tailwind.config = {
+        theme: {
+          extend: {
+            backgroundImage: {
+              slider1: "url('./images/banner1.png')",
+              slider2: "url('./images/banner2.png')",
+              slider3: "url('./images/banner3.png')",
+              slider4: "url('./images/banner4.png')",
             },
-              colors: {
-                'clifford': '#da373d',
-                'nav-bg' : '#F85559',
-              },
-            }
-          }
-        }
-      </script>
+            colors: {
+              clifford: "#da373d",
+              "nav-bg": "#F85559",
+            },
+          },
+        },
+      };
+    </script>
+    <script
+      src="https://kit.fontawesome.com/a8e2726981.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header class="container mx-auto ">
+    <header class="container mx-auto">
       <nav>
         <div class="navbar md:bg-nav-bg rounded-[600px] lg:mt-10 md:px-14">
           <div class="navbar-start">
@@ -56,157 +60,230 @@
               </label>
               <ul
                 tabindex="0"
-                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52">
-              <li><a>Home</a></li>
-              <li><a>About Us</a></li>
-              <li><a>Shop</a></li>
-              <li><a>All Fruits</a></li>
+                class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
+              >
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
               </ul>
             </div>
             <div class="hidden lg:flex">
-                <ul class="menu menu-horizontal px-1 text-white text-lg">
-                    <li><a>Home</a></li>
-                    <li><a>About Us</a></li>
-                    <li><a>Shop</a></li>
-                    <li><a>All Fruits</a></li>
-                  </ul>
+              <ul class="menu menu-horizontal px-1 text-white text-lg">
+                <li><a>Home</a></li>
+                <li><a>About Us</a></li>
+                <li><a>Shop</a></li>
+                <li><a>All Fruits</a></li>
+              </ul>
             </div>
           </div>
-          <a class="navbar-center text-xl"><img src="./images/logo.png" alt="">&nbsp; &nbsp; <p class="md:text-white md:text-xl lg:text-4xl md:font-bold">Faazizpro Fruit Bar</p></a>
+          <a class="navbar-center text-xl"
+            ><img src="./images/logo.png" alt="" />&nbsp; &nbsp;
+            <p class="md:text-white md:text-xl lg:text-4xl md:font-bold">
+              Faazizpro Fruit Bar
+            </p></a
+          >
 
-          <div class="navbar-end ">
-            
+          <div class="navbar-end">
             <div class="">
-                <div class="form-control bg-white flex flex-row items-center hidden md:flex rounded-[50px]">
-                    <div>
-                        <input type="text" placeholder="Search" class="input rounded-[50px] "/>
-                    </div>
-                    <div>
-                        <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 lg:mr-3" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
-                    </div>
-                  </div>
-                
+              <div
+                class="form-control bg-white flex flex-row items-center hidden md:flex rounded-[50px]"
+              >
+                <div>
+                  <input
+                    type="text"
+                    placeholder="Search"
+                    class="input rounded-[50px]"
+                  />
+                </div>
+                <div>
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    class="h-5 w-5 lg:mr-3"
+                    fill="none"
+                    viewBox="0 0 24 24"
+                    stroke="currentColor"
+                  >
+                    <path
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      stroke-width="2"
+                      d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                    />
+                  </svg>
+                </div>
               </div>
+            </div>
           </div>
         </div>
       </nav>
     </header>
 
-    <main  class="container mx-auto px-5">
+    <main class="container mx-auto px-5">
       <!-- Banner Section -->
       <section>
         <div class="relative">
           <!-- Slider -->
-          <div class="carousel w-full h-auto md:h-[300px] lg:h-[450px] xl:h-[600px] rounded-xl mt-16 z-10">
-            <div id="slide1" class="carousel-item relative w-full bg-slider1 bg-cover bg-no-repeat	bg-center">
-              <div class="flex flex-col items-center justify-center w-3/4 mx-auto">
-                  <div>
-                    <h3 class="eb lg:text-7xl text-center lg:font-extrabold text-white mb-1">
-                      Exotic tastes at your <br> doorstep
-                    </h3>
-                    <p class="poppins text-base text-center leading-6 text-white mb-8">
-                      We supply highly quality organic products
-                    </p>
-                    <div class="flex justify-center">
-                      <button class="btn border-0 text-white bg-[#F85559]">Shop Now</button>
-                    </div>
+          <div
+            class="carousel w-full h-auto md:h-[300px] lg:h-[450px] xl:h-[600px] rounded-xl mt-16 z-10"
+          >
+            <div
+              id="slide1"
+              class="carousel-item relative w-full bg-slider1 bg-cover bg-no-repeat bg-center"
+            >
+              <div
+                class="flex flex-col items-center justify-center w-3/4 mx-auto"
+              >
+                <div>
+                  <h3
+                    class="eb lg:text-7xl text-center lg:font-extrabold text-white mb-1"
+                  >
+                    Exotic tastes at your <br />
+                    doorstep
+                  </h3>
+                  <p
+                    class="poppins text-base text-center leading-6 text-white mb-8"
+                  >
+                    We supply highly quality organic products
+                  </p>
+                  <div class="flex justify-center">
+                    <button class="btn border-0 text-white bg-[#F85559]">
+                      Shop Now
+                    </button>
                   </div>
+                </div>
               </div>
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide4" class="btn btn-circle btn-xs">❮</a> 
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide4" class="btn btn-circle btn-xs">❮</a>
                 <a href="#slide2" class="btn btn-circle btn-xs">❯</a>
               </div>
-            </div> 
-            <div id="slide2" class="carousel-item relative w-full bg-slider2 bg-cover bg-no-repeat	bg-center	">
-              <div class="flex flex-col items-center justify-center w-3/4 mx-auto">
+            </div>
+            <div
+              id="slide2"
+              class="carousel-item relative w-full bg-slider2 bg-cover bg-no-repeat bg-center"
+            >
+              <div
+                class="flex flex-col items-center justify-center w-3/4 mx-auto"
+              >
                 <div>
-                  <h3 class="eb lg:text-7xl text-center lg:font-extrabold text-white mb-1">
-                    Exotic tastes at your <br> doorstep
+                  <h3
+                    class="eb lg:text-7xl text-center lg:font-extrabold text-white mb-1"
+                  >
+                    Exotic tastes at your <br />
+                    doorstep
                   </h3>
-                  <p class="poppins text-base text-center leading-6 text-white mb-8">
+                  <p
+                    class="poppins text-base text-center leading-6 text-white mb-8"
+                  >
                     We supply highly quality organic products
                   </p>
                   <div class="flex justify-center">
-                    <button class="btn border-0 text-white bg-[#F85559]">Shop Now</button>
+                    <button class="btn border-0 text-white bg-[#F85559]">
+                      Shop Now
+                    </button>
                   </div>
                 </div>
-            </div>
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide1" class="btn btn-circle btn-xs">❮</a> 
+              </div>
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide1" class="btn btn-circle btn-xs">❮</a>
                 <a href="#slide3" class="btn btn-circle btn-xs">❯</a>
               </div>
-            </div> 
-            <div id="slide3" class="carousel-item relative w-full bg-slider3 bg-cover bg-no-repeat	bg-center	">
-              <div class="flex flex-col items-center justify-center w-3/4 mx-auto">
+            </div>
+            <div
+              id="slide3"
+              class="carousel-item relative w-full bg-slider3 bg-cover bg-no-repeat bg-center"
+            >
+              <div
+                class="flex flex-col items-center justify-center w-3/4 mx-auto"
+              >
                 <div>
-                  <h3 class="eb lg:text-7xl text-center lg:font-extrabold text-white mb-1">
-                    Exotic tastes at your <br> doorstep
+                  <h3
+                    class="eb lg:text-7xl text-center lg:font-extrabold text-white mb-1"
+                  >
+                    Exotic tastes at your <br />
+                    doorstep
                   </h3>
-                  <p class="poppins text-base text-center leading-6 text-white mb-8">
+                  <p
+                    class="poppins text-base text-center leading-6 text-white mb-8"
+                  >
                     We supply highly quality organic products
                   </p>
                   <div class="flex justify-center">
-                    <button class="btn border-0 text-white bg-[#F85559]">Shop Now</button>
+                    <button class="btn border-0 text-white bg-[#F85559]">
+                      Shop Now
+                    </button>
                   </div>
                 </div>
-            </div>
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide2" class="btn btn-circle btn-xs">❮</a> 
+              </div>
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide2" class="btn btn-circle btn-xs">❮</a>
                 <a href="#slide4" class="btn btn-circle btn-xs">❯</a>
               </div>
             </div>
-            <div id="slide4" class="carousel-item relative w-full bg-slider4 bg-cover bg-no-repeat	bg-center	">
-              <div class="flex flex-col items-center justify-center w-3/4 mx-auto">
+            <div
+              id="slide4"
+              class="carousel-item relative w-full bg-slider4 bg-cover bg-no-repeat bg-center"
+            >
+              <div
+                class="flex flex-col items-center justify-center w-3/4 mx-auto"
+              >
                 <div>
-                  <h3 class="eb lg:text-7xl text-center lg:font-extrabold text-white mb-1">
-                    Exotic tastes at your <br> doorstep
+                  <h3
+                    class="eb lg:text-7xl text-center lg:font-extrabold text-white mb-1"
+                  >
+                    Exotic tastes at your <br />
+                    doorstep
                   </h3>
-                  <p class="poppins text-base text-center leading-6 text-white mb-8">
+                  <p
+                    class="poppins text-base text-center leading-6 text-white mb-8"
+                  >
                     We supply highly quality organic products
                   </p>
                   <div class="flex justify-center">
-                    <button class="btn border-0 text-white bg-[#F85559]">Shop Now</button>
+                    <button class="btn border-0 text-white bg-[#F85559]">
+                      Shop Now
+                    </button>
                   </div>
                 </div>
-            </div>
-              <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
-                <a href="#slide3" class="btn btn-circle btn-xs">❮</a> 
+              </div>
+              <div
+                class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
+              >
+                <a href="#slide3" class="btn btn-circle btn-xs">❮</a>
                 <a href="#slide1" class="btn btn-circle btn-xs">❯</a>
               </div>
             </div>
           </div>
           <!-- fruits banner -->
-          <div class="bg-white rounded-lg my-10 w-3/5 mx-auto z-50 absolute left-72 top-[550px] shadow-lg py-5 xl:px-10 hidden xl:block">
-            <div class="flex justify-center items-center gap-24 ">
+          <div
+            class="bg-white rounded-lg my-10 w-3/5 mx-auto z-50 absolute left-72 top-[550px] shadow-lg py-5 xl:px-10 hidden xl:block"
+          >
+            <div class="flex justify-center items-center gap-24">
               <div class="flex flex-col justify-center items-center">
-                <img src="./images/fruit1.png" alt="">
-                <p class="text-xl font-medium">
-                  Grape
-                </p>
+                <img src="./images/fruit1.png" alt="" />
+                <p class="text-xl font-medium">Grape</p>
               </div>
               <div class="flex flex-col justify-center items-center">
-                <img src="./images/fruit2.png" alt="">
-                <p class="text-xl font-medium">
-                  Orange
-                </p>
+                <img src="./images/fruit2.png" alt="" />
+                <p class="text-xl font-medium">Orange</p>
               </div>
               <div class="flex flex-col justify-center items-center">
-                <img src="./images/fruit3.png" alt="">
-                <p class="text-xl font-medium">
-                  Mango
-                </p>
+                <img src="./images/fruit3.png" alt="" />
+                <p class="text-xl font-medium">Mango</p>
               </div>
               <div class="flex flex-col justify-center items-center">
-                <img src="./images/fruit4.png" alt="">
-                <p class="text-xl font-medium">
-                  Strawberry
-                </p>
+                <img src="./images/fruit4.png" alt="" />
+                <p class="text-xl font-medium">Strawberry</p>
               </div>
               <div class="flex flex-col justify-center items-center">
-                <img src="./images/fruit5.png" alt="">
-                <p class="text-xl font-medium">
-                  Pomegranate
-                </p>
+                <img src="./images/fruit5.png" alt="" />
+                <p class="text-xl font-medium">Pomegranate</p>
               </div>
             </div>
           </div>
@@ -216,37 +293,40 @@
       <section class="my-36">
         <div class="flex flex-col lg:flex-row justify-between">
           <div class="flex flex-col items-center md:items-start">
-            <h2 class="text-3xl lg:text-5xl  font-extrabold text-black">
+            <h2 class="text-3xl lg:text-5xl font-extrabold text-black">
               Deal of the day
             </h2>
-            <p class="text-base  font-medium leading-6 lg:w-1/2 mt-6">
-              Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.
+            <p class="text-base font-medium leading-6 lg:w-1/2 mt-6">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
             </p>
           </div>
           <div>
-            
-            <div class="grid grid-flow-col gap-5 text-center auto-cols-max items-center justify-center mt-5 md:mt-0">
+            <div
+              class="grid grid-flow-col gap-5 text-center auto-cols-max items-center justify-center mt-5 md:mt-0"
+            >
               <div class="flex flex-col">
                 <span class="countdown font-mono text-2xl lg:text-5xl">
-                  <span style="--value:15;"></span>:
+                  <span style="--value: 15"></span>:
                 </span>
                 days
               </div>
               <div class="flex flex-col">
                 <span class="countdown font-mono text-2xl lg:text-5xl">
-                  <span style="--value:10;"></span>:
+                  <span style="--value: 10"></span>:
                 </span>
                 hours
-              </div> 
+              </div>
               <div class="flex flex-col">
                 <span class="countdown font-mono text-2xl lg:text-5xl">
-                  <span style="--value:24;"></span>:
+                  <span style="--value: 24"></span>:
                 </span>
                 min
-              </div> 
+              </div>
               <div class="flex flex-col">
                 <span class="countdown font-mono text-2xl lg:text-5xl">
-                  <span style="--value:49;"></span>
+                  <span style="--value: 49"></span>
                 </span>
                 sec
               </div>
@@ -254,15 +334,237 @@
           </div>
         </div>
         <div>
-          <div class="card lg:w-96 bg-base-100 shadow-xl">
-            <figure class="px-10 pt-10">
-              <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
-            </figure>
-            <div class="card-body items-center text-center divide-y">
-              <h2 class="card-title">12.90$ - 18.85$</h2>
-              <p class="w-1/2">Apples</p>
-              <div class="card-actions">
-                <button class="btn btn-primary">Buy Now</button>
+          <div class="grid grid-cols-1 md:grid-cols-4 gap-10">
+            <div class="card lg:w-80 bg-base-100 shadow-xl mt-12">
+              <figure class="px-10 pt-10">
+                <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <div class="divide-y">
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <p class="w-10/12 mx-auto">Apples</p>
+                </div>
+                <div class="card-actions flex flex-col items-center">
+                  <div>
+                    <i class="fa-solid fa-star" style="color: #f85559"></i>
+                    <i
+                      class="fa-solid fa-star-half-stroke"
+                      style="color: #f85559"
+                    ></i>
+                    <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                    <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                    <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                  </div>
+                </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_1.showModal()">
+                  Details
+                </button>
+                <dialog id="my_modal_1" class="modal">
+                  <div class="modal-box flex flex-col justify-center items-center">
+                    <div class="flex flex-col items-center justify-center">
+                      <figure class="px-10 pt-10">
+                        <img src="./images/fruit6.png" alt="Shoes" class="rounded-xl" />
+                      </figure>
+                      
+                      <p class="w-10/12 mx-auto">Apples</p>
+                      <p>
+                        By eating fruit, a person is providing their body with key vitamins, antioxidants, and dietary fiber. This can have significant benefits for heart health, digestion, weight management, and skin health.
+                      </p>
+                      <div>
+                        <i class="fa-solid fa-star" style="color: #f85559"></i>
+                        <i
+                          class="fa-solid fa-star-half-stroke"
+                          style="color: #f85559"
+                        ></i>
+                        <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                        <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                        <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                      </div>
+                    </div>
+                    <div class="modal-action flex justify-center items-center">
+                      <form class="flex gap-8 justify-center items-center" method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn btn-outline ">Close</button>
+                        <button class="btn bg-[#f85559] text-white">Open</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+              </div>
+            </div>
+            <div class="card lg:w-80 bg-base-100 shadow-xl mt-12">
+              <figure class="px-10 pt-10">
+                <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <div class="divide-y">
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <p class="w-10/12 mx-auto">Orange</p>
+                </div>
+                <div class="card-actions flex flex-col items-center">
+                  <div>
+                    <i class="fa-solid fa-star" style="color: #f85559"></i>
+                    <i
+                      class="fa-solid fa-star-half-stroke"
+                      style="color: #f85559"
+                    ></i>
+                    <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                    <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                    <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                  </div>
+                </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_2.showModal()">
+                  Details
+                </button>
+                <dialog id="my_modal_2" class="modal">
+                  <div class="modal-box flex flex-col justify-center items-center">
+                    <div class="flex flex-col items-center justify-center">
+                      <figure class="px-10 pt-10">
+                        <img src="./images/fruit7.png" alt="Shoes" class="rounded-xl" />
+                      </figure>
+                      
+                      <p class="w-10/12 mx-auto">Orange</p>
+                      <p>
+                        By eating fruit, a person is providing their body with key vitamins, antioxidants, and dietary fiber. This can have significant benefits for heart health, digestion, weight management, and skin health.
+                      </p>
+                      <div>
+                        <i class="fa-solid fa-star" style="color: #f85559"></i>
+                        <i
+                          class="fa-solid fa-star-half-stroke"
+                          style="color: #f85559"
+                        ></i>
+                        <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                        <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                        <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                      </div>
+                    </div>
+                    <div class="modal-action flex justify-center items-center">
+                      <form class="flex gap-8 justify-center items-center" method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn btn-outline ">Close</button>
+                        <button class="btn bg-[#f85559] text-white">Open</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+              </div>
+            </div>
+            <div class="card lg:w-80 bg-base-100 shadow-xl mt-12">
+              <figure class="px-10 pt-10">
+                <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <div class="divide-y">
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <p class="w-10/12 mx-auto">Red Dragon</p>
+                </div>
+                <div class="card-actions flex flex-col items-center">
+                  <div>
+                    <i class="fa-solid fa-star" style="color: #f85559"></i>
+                    <i
+                      class="fa-solid fa-star-half-stroke"
+                      style="color: #f85559"
+                    ></i>
+                    <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                    <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                    <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                  </div>
+                </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_3.showModal()">
+                  Details
+                </button>
+                <dialog id="my_modal_3" class="modal">
+                  <div class="modal-box flex flex-col justify-center items-center">
+                    <div class="flex flex-col items-center justify-center">
+                      <figure class="px-10 pt-10">
+                        <img src="./images/fruit8.png" alt="Shoes" class="rounded-xl" />
+                      </figure>
+                      
+                      <p class="w-10/12 mx-auto">Red Dragon</p>
+                      <p>
+                        By eating fruit, a person is providing their body with key vitamins, antioxidants, and dietary fiber. This can have significant benefits for heart health, digestion, weight management, and skin health.
+                      </p>
+                      <div>
+                        <i class="fa-solid fa-star" style="color: #f85559"></i>
+                        <i
+                          class="fa-solid fa-star-half-stroke"
+                          style="color: #f85559"
+                        ></i>
+                        <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                        <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                        <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                      </div>
+                    </div>
+                    <div class="modal-action flex justify-center items-center">
+                      <form class="flex gap-8 justify-center items-center" method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn btn-outline ">Close</button>
+                        <button class="btn bg-[#f85559] text-white">Open</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
+              </div>
+            </div>
+            <div class="card lg:w-80 bg-base-100 shadow-xl mt-12">
+              <figure class="px-10 pt-10">
+                <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+              </figure>
+              <div class="card-body items-center text-center">
+                <div class="divide-y">
+                  <h2 class="card-title">12.90$ - 18.85$</h2>
+                  <p class="w-10/12 mx-auto">Banana</p>
+                </div>
+                <div class="card-actions flex flex-col items-center">
+                  <div>
+                    <i class="fa-solid fa-star" style="color: #f85559"></i>
+                    <i
+                      class="fa-solid fa-star-half-stroke"
+                      style="color: #f85559"
+                    ></i>
+                    <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                    <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                    <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                  </div>
+                </div>
+                <!-- Open the modal using ID.showModal() method -->
+                <button class="text-[#F85559] text-lg font-bold" onclick="my_modal_4.showModal()">
+                  Details
+                </button>
+                <dialog id="my_modal_4" class="modal">
+                  <div class="modal-box flex flex-col justify-center items-center">
+                    <div class="flex flex-col items-center justify-center">
+                      <figure class="px-10 pt-10">
+                        <img src="./images/fruit9.png" alt="Shoes" class="rounded-xl" />
+                      </figure>
+                      
+                      <p class="w-10/12 mx-auto">Banana</p>
+                      <p>
+                        By eating fruit, a person is providing their body with key vitamins, antioxidants, and dietary fiber. This can have significant benefits for heart health, digestion, weight management, and skin health.
+                      </p>
+                      <div>
+                        <i class="fa-solid fa-star" style="color: #f85559"></i>
+                        <i
+                          class="fa-solid fa-star-half-stroke"
+                          style="color: #f85559"
+                        ></i>
+                        <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                        <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                        <i class="fa-solid fa-star" style="color: #fbc0a8"></i>
+                      </div>
+                    </div>
+                    <div class="modal-action flex justify-center items-center">
+                      <form class="flex gap-8 justify-center items-center" method="dialog">
+                        <!-- if there is a button in form, it will close the modal -->
+                        <button class="btn btn-outline ">Close</button>
+                        <button class="btn bg-[#f85559] text-white">Open</button>
+                      </form>
+                    </div>
+                  </div>
+                </dialog>
               </div>
             </div>
           </div>
